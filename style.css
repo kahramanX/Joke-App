@@ -1,0 +1,59 @@
+/*Mini Reset CSS*/
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/*Mini Reset CSS*/
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgb(149, 252, 252);
+    text-align: center;
+}
+
+.joke-create-button>button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(238, 98, 98);
+    color: rgb(252, 229, 229);
+}
+.joke-create-button{
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+    margin-top: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 30px 15px rgba(163, 163, 163, 0.3);
+    border: 2px solid gray;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+section>.random-image>img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+section>article {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: 5px 5px 10px 2px #ffe0e0;
+    padding: 15px;
+    height: auto;
+    font-size: 20px;
+}
+
+section>article:first-of-type {
+    margin-bottom: 30px;
+}
