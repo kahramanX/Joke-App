@@ -11,5 +11,5 @@ this app use 3 api:
 But not just joke 
 You get a random photo, and translated an chucknorris joke -_-
 
-İf Yandex translate api doesn't work, don't worry. Because my account balance have been limited 
+İf Yandex translate api doesn't work, don't worry. Because my account balance have been limited. 
 thanks
