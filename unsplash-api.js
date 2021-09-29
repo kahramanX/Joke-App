@@ -14,13 +14,14 @@ class UnsplashApi {
     }
 
     async getUnsplashApi() {
-
         try {
             let UnsplashObject = await this.UnsplashApi.get("/photos/random");
             console.log(UnsplashObject.data.urls.regular);
+            return UnsplashObject.data.urls.regular;
 
         } catch (error) {
             console.log(error);
+           // return "https://previews.123rf.com/images/pockygallery/pockygallery1504/pockygallery150400347/39166249-failed-red-stamp-text-on-white.jpg";
         }
 
     }

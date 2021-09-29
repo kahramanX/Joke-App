@@ -11,31 +11,29 @@ class Screen {
         let translateApi = await new TranslateApi(randomJoke).getTranslateApi();
 
         const allResults = {
-            randomJoke,
-            randomPhoto,
-            translateApi
+            randomJoke: randomJoke,
+            randomPhoto: randomPhoto,
+            translateApi: translateApi
         }
+
         this.addJokeToUI(allResults);
     }
 
     addJokeToUI(allResults) {
         let section = document.querySelector("section");
 
-        let addJokeToSection = `
+        section.innerHTML= `
         <div class="random-image">
-        <img src="${allResults[1]}" alt="">
+        <img src="${allResults.randomPhoto}" alt="the image could not be loaded">
     </div>
     
         <article class="english-text">
-            <p>${allResults[0]}</p>
+            <p>${allResults.randomJoke}</p>
         </article>
     
         <article class="turkish-translated">
-            <p>${allResults[2]}</p>
+            <p>${allResults.translateApi}</p>
         </article>
         `;
-
-        section.innerHTML=addJokeToSection;
     }
-
 }

@@ -9,5 +9,7 @@ class JokeApi{
    async getJokeApi(){
        let jokeObject = await this.jokeApi.get("/jokes/random");
         console.log(jokeObject.data.value);
+
+        return jokeObject.data.value;
     }
 }
