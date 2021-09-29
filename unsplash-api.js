@@ -25,3 +25,9 @@ class UnsplashApi {
 
     }
 }
+
+export function getImage(){
+    const broughtImage = new UnsplashApi().getUnsplashApi();
+
+    return broughtImage;
+}

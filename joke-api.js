@@ -13,3 +13,8 @@ class JokeApi{
         return jokeObject.data.value;
     }
 }
+
+export function getJoke(){
+    const broughtJoke =  new JokeApi.getJokeApi();
+    return broughtJoke;
+}

@@ -1,1 +1,3 @@
-let screen = new Screen; // starting screen
+import runApp from "./screen.js";
+
+runApp();

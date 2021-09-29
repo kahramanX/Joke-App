@@ -1,14 +1,17 @@
+import { getImage } from "./unsplash-api.js";
+import { getTranslate } from "./translate-api.js";
+import { getJoke } from "./joke-api.js";
+
 class Screen {
     constructor() {
-        this.createJokeBtn = document.querySelector(".joke-create-button")
+        this.createJokeBtn = document.imoquerySelector(".joke-create-button")
             .addEventListener("click", () => this.createNewJoke());
-
     }
 
     async createNewJoke() {
-        let randomJoke = await new JokeApi().getJokeApi();
-        let randomPhoto = await new UnsplashApi().getUnsplashApi();
-        let translateApi = await new TranslateApi(randomJoke).getTranslateApi();
+        let randomJoke = await new getJoke();
+        let randomPhoto = await new getImage();
+        let translateApi = await new getTranslate();
 
         const allResults = {
             randomJoke: randomJoke,
@@ -36,4 +39,8 @@ class Screen {
         </article>
         `;
     }
+}
+
+export default function runApp(){
+    const screen = new Screen();
 }

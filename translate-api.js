@@ -13,3 +13,9 @@ class TranslateApi{
         return translateObject.data.text.toString();
     }
 }
+
+export function getTranslate(text){
+    const translated = new TranslateApi(text).getTranslateApi();
+
+    return translated;
+}
