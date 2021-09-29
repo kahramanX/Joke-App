@@ -1,7 +1,3 @@
-let randomJoke = new JokeApi;
-let randomPhoto = new UnsplashApi;
-let translateApi = new TranslateApi;
+let screen = new Screen;
 
-randomJoke.getJokeApi();
-randomPhoto.getUnsplashApi();
-translateApi.getTranslateApi();
+
