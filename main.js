@@ -1,1 +1,1 @@
-let screen = new Screen;
+let screen = new Screen; // starting screen
